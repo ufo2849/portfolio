@@ -394,3 +394,27 @@ p {
     background-color: var(--color-dark-white);
     display: block;
 }
+
+/* Contact */
+#contact {
+    background-color: var(--color-main);
+}
+
+.contact__title, .contact__email {
+    color: var(--color-white);
+}
+
+.contact__title {
+    margin: 32px 0;
+}
+
+.contact__links {
+    font-size: var(--font-medium);
+    margin: 24px 0;
+}
+
+.contact__links i:hover {
+    transform: scale(1.1);
+    color: var(--color-green);
+    transition: all var(--ani-duration) ease-in;
+}
