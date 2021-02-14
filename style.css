@@ -93,12 +93,20 @@ p {
 
 /* Navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-main);
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
     padding: 10px 16px;
+    transition: all var(--ani-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+    background-color: var(--color-main);
+    padding: 8px;
 }
 
 .navbar__menu {
@@ -142,6 +150,7 @@ p {
     justify-content: space-evenly;
     background: url("Image/bg2.JPG") center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     /*text-align: center;*/
 }
 
