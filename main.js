@@ -21,8 +21,14 @@ navbarmenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
-    
+    navbarmenu.classList.remove('open');
     scrollIntoView(link);
+});
+
+// Navbar toggle button for small screen
+const navbarTogglebtn= document.querySelector('.navbar__toggle-btn');
+navbarTogglebtn.addEventListener('click', () => {
+    navbarmenu.classList.toggle('open');
 });
 
 // Scrolling when tapped 'contact me' on home
