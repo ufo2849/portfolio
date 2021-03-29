@@ -91,6 +91,10 @@ p {
     margin: 4px 0;
 }
 
+#namespan {
+    color: var(--color-green);
+}
+
 /* Navbar */
 #navbar {
     position: fixed;
